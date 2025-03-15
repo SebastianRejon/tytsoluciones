@@ -1,0 +1,235 @@
+/* Reset básico */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: "Roboto", sans-serif;
+    /* font-size: 1em; */
+  }
+  
+  /* Estilos generales */
+  body {
+    /* font-family: Arial, sans-serif; */
+    background-color: #fefdfc;
+    color: #333;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    text-align: center;
+  }
+  
+  header {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 1rem;
+    background-color: #027dc3;
+    width: 100%;
+    position: relative;
+  }
+  
+  header a.whatsapp-logo img {
+    width: 30px;
+  }
+  
+  h1 {
+    color: #027dc3;
+    margin-top: 2rem;
+  }
+  
+  .contact-info {
+    margin-top: 1rem;
+    color: #027dc3;
+  }
+  
+  .nav-menu {
+    display: flex;
+  }
+  
+  .nav-menu ul {
+    display: flex;
+    list-style-type: none;
+  }
+  
+  .nav-menu ul li a {
+    color: #fefdfc;
+    padding: 1rem;
+    text-decoration: none;
+    font-weight: bold;
+  }
+/* Estilo para las secciones */
+section {
+    width: 90vw;
+    padding: 100px 20px;
+    min-height: 35vh;
+    text-align: center;
+}
+
+.section-header {
+    cursor: pointer;
+    font-size: 2rem;
+}
+
+.section-images {
+    display: flex;
+    justify-content: center;
+    gap: 15px;
+    margin-top: 20px;
+}
+
+.section-images img {
+    width: 250px;
+    height: 250px;
+    object-fit: cover;
+    cursor: pointer;
+    border: 2px solid #027dc3;
+    border-radius: 5px;
+    transition: transform 0.3s;
+}
+
+.section-images img:hover {
+    transform: scale(1.5);
+}
+
+.details {
+    margin-top: 50px;
+    text-align: center;
+}
+.details img{
+  width: 60vw;
+}
+.details p{
+  font-size: 1.5rem;
+}
+#inicio {
+    background-color: #fefdfc;
+}
+
+#servicios {
+    background-color: #f1f1f1;
+}
+
+#contacto {
+    background-color: #e5e5e5;
+}
+
+h1,
+h2 {
+    color: #027dc3;
+}  
+  
+  /* Estilos para el botón de menú hamburguesa */
+.menu-toggle {
+    display: none;
+    font-size: 1.5rem;
+    color: #fefdfc;
+    background: none;
+    border: none;
+    cursor: pointer;
+  }
+/*tira imagenes*/
+.image-strip {
+    overflow: hidden;
+    white-space: nowrap;
+    position: relative;
+    width: 70%;
+    display: flex;
+    align-items: center;
+    margin: 20px auto;
+    background-color: #fefdfc;
+    /* Ajusta al color de fondo que prefieras */
+}
+
+.image-track {
+    display: flex;
+    align-items: center;
+    align-content: center;
+    animation: scroll 5s linear infinite;
+}
+
+/* Aplicación del efecto en escala de grises */
+.image-track img {
+    filter: grayscale(100%);
+    width: 200px;
+    /* Ajusta el tamaño según sea necesario */
+    height: auto;
+    margin-right: 10px;
+    /* Espaciado entre imágenes */
+}  
+/*tira de imagenes*/
+@keyframes scroll {
+    0% {
+        transform: translateX(0);
+    }
+
+    100% {
+        transform: translateX(-50%);
+        /* Ajusta según la cantidad de imágenes */
+    }
+
+}
+.footer {
+    width: 100%;
+    background-color: #027dc3;
+    color: #fefdfc;
+    text-align: center;
+    padding: 20px 0;
+}
+.section-images-responsive{
+    display: none;
+}
+  /* Modo responsivo */
+  @media (max-width: 768px) {
+    .nav-menu {
+      display: none;
+      flex-direction: column;
+      width: 100%;
+    }
+  
+    .menu-toggle {
+      display: block;
+    }
+    .nav-menu.active {
+      display: flex;
+      position: absolute;
+      top: 60px;
+      left: 0;
+      background-color: #027dc3;
+      width: 100%;
+    }
+    .nav-menu ul {
+      flex-direction: column;
+      width: 100%;
+    }
+    .nav-menu ul li a {
+      padding: 1rem;
+      text-align: center;
+      width: 100%;
+      display: block;
+    }
+     .section-images{
+        display: none;
+    }
+
+    .section-images img {
+        width: 100vw;
+        height: auto;
+    }  
+    .section-images-responsive{
+        display: flex;
+        justify-content: center;
+        gap: 15px;
+        margin-top: 20px;
+    }  
+    .section-images-responsive img{
+        width: 90vw;
+        height: auto;
+    } 
+    .details img{
+      width: 80vw;
+    }
+    .details p{
+      font-size: 1rem;
+    }
+  }
+  
