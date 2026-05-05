@@ -1,114 +1,125 @@
 <!DOCTYPE html>
 <html lang="es">
 <head>
-  <meta charset="UTF-8">
-  <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <meta http-equiv="X-UA-Compatible" content="IE=edge">
-  <meta name="keywords" content="tablero smec,smec,certifiacion puesta a tierra,pat,certifiacion pat,tableros
-  montaje electromecanico,montaje electrico,media tesion,baja tension,daniel taborda,mediciones de pueta a tierra,
-  mediciones de pat,telurimetro,certificacion,certificaciones,instalaciones electricas,medicion comercial de energia,
-  mem,resolucion 900/15,prueba de disyuntores,super intendencia de riesgo de trabajo,Daniel Taborda, TyTsoluciones, tytsoluciones">
-  <meta name="author" content="tytsoluciones">
-  <meta name="description" content="tableros smec, montaje electromecanico, montaje electrico, mediciones de puesta a tierra, informes">
-  <title>TyTsoluciones</title>
-  <link rel="preconnect" href="https://fonts.googleapis.com">
-<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-<link href="https://fonts.googleapis.com/css2?family=Roboto:ital,wght@0,100;0,300;0,400;0,500;0,700;0,900;1,100;1,300;1,400;1,500;1,700;1,900&display=swap" rel="stylesheet">
-  <link rel="stylesheet" href="main.css">
-
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="keywords" content="tablero smec,smec,certifiacion puesta a tierra,pat,certifiacion pat,tableros, montaje electromecanico,montaje electrico,media tesion,baja tension,daniel taborda,mediciones de pueta a tierra, mediciones de pat,telurimetro,certificacion,certificaciones,instalaciones electricas,medicion comercial de energia, mem,resolucion 900/15,prueba de disyuntores,super intendencia de riesgo de trabajo,Daniel Taborda, TyTsoluciones, tytsoluciones">
+    <meta name="author" content="tytsoluciones">
+    <meta name="description" content="tableros smec, montaje electromecanico, montaje electrico, mediciones de puesta a tierra, informes">
+    <title>TyTsoluciones | Ingeniería y Montaje Eléctrico</title>
+    <!-- Modern Font: Inter -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;600;700;800&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="main.css">
 </head>
 <body>
-  <!-- Encabezado con logo de WhatsApp y menú de navegación -->
-  <header>
-    <a href="https://api.whatsapp.com/send?phone=341255006" class="whatsapp-logo">
-      <img src="/img/whatsapp.svg" alt="WhatsApp" />
-    </a>
-    <button class="menu-toggle" onclick="toggleMenu()">&#9776;</button>
-    <nav class="nav-menu">
-      <ul>
-        <li><a href="#bloque1">Montaje Eléctrico</a></li>
-        <li><a href="#bloque2">Mediciones Eléctricas</a></li>
-        <li><a href="#bloque3">Ingeniería de Detalle</a></li>
-        <li><a href="#bloque4">Clientes</a></li>
-      </ul>
-    </nav>
-  </header>
-  <main>
-        <section id="bloque1">
-            <div id="detalles-inicio" class="details">
-                <p><img src="/img/tytsoluciones.jpeg" alt="tytsoluciones"></p>
-                <p>Email: <a href="mailto:contacto@tytsoluciones.com">contacto@tytsoluciones.com</a></p>
-                <p>Teléfono: <a href="tel:+341255006">341255006</a></p>
+    
+    <!-- Navegación Superior -->
+    <header class="navbar">
+        <div class="nav-left">
+            <a href="https://api.whatsapp.com/send?phone=341255006" class="nav-whatsapp" target="_blank">
+                <img src="img/whatsapp.svg" alt="WhatsApp">
+            </a>
+        </div>
+        <button class="menu-toggle" onclick="toggleMenu()" aria-label="Abrir menú">
+            <div class="bar"></div>
+            <div class="bar"></div>
+            <div class="bar"></div>
+        </button>
+        <nav class="nav-menu">
+            <ul>
+                <li><a href="#hero">Inicio</a></li>
+                <li><a href="#servicios">Servicios</a></li>
+                <li><a href="#clientes">Nosotros</a></li>
+            </ul>
+        </nav>
+    </header>
+
+    <main>
+        <!-- Sección Cabecera (Hero Section) -->
+        <section id="hero" class="hero-section">
+            <div class="hero-content">
+                <img src="img/tytsoluciones.jpeg" alt="TyT Soluciones Logo" class="hero-logo">
+                <h1 class="hero-title">Soluciones Integrales de Energía</h1>
+                <p class="hero-subtitle">Proyectos electromecánicos, mediciones y puestas a tierra con altos estándares de calidad.</p>
+                <div class="hero-contact">
+                    <p><strong>Email:</strong> <a href="mailto:contacto@tytsoluciones.com">contacto@tytsoluciones.com</a></p>
+                    <p><strong>Teléfono:</strong> <a href="tel:+341255006">341255006</a></p>
+                </div>
             </div>
         </section>
-    <section id="bloque1">
-        <h1 class="section-header">Montaje Eléctrico</h1>
-        <div class="section-images">
-            <img src="img/montaje/montaje (1).jpeg" alt="Imagen 1">
-            <img src="img/montaje/montaje (2).jpeg" alt="Imagen 2">
-            <img src="img/montaje/montaje (3).jpeg" alt="Imagen 3">
-            <img src="img/montaje/montaje (4).jpeg" alt="Imagen 4">
-            <img src="img/montaje/montaje (5).jpeg" alt="Imagen 5">
-        </div>
-        <div class="section-images-responsive">
-            <img src="img/montaje/montaje (5).jpeg" alt="Imagen 1">
-        </div>
-        <div id="detalles-inicio" class="details">
-            <p>Nos enfomacamos en el desarrollo de tableros de Media y Baja Tensión, Tableros SMEC, Montaje Electromecánico, automatismos, PLC, HMI, corrección por coseno de Fi.</p>
-        </div>
-    </section>
-    <section id="bloque2">
-        <h1 class="section-header">Mediciones Eléctricas</h1>
-        <div class="section-images">
-            <img src="img/pat/pat (1).jpeg" alt="Servicio 1">
-            <img src="img/pat/pat (2).jpeg" alt="Servicio 2">
-            <img src="img/pat/pat (3).jpeg" alt="Servicio 3">
-        </div>
-        <div class="section-images-responsive">
-            <img src="img/pat/pat (2).jpeg" alt="Imagen 1">
-        </div>
-        <div id="detalles-servicios" class="details">
-            <p>Realizamos mediciones de PaT (Puesta a Tierra), Disyuntores Resd. 900/1, coseno de Fi, Armónicos y Megados.</p>
-        </div>
-    </section>
-    <section id="bloque3">
-        <h1 class="section-header" >Ingeniería de Detalle y Desarrollo Tableros</h1>
-        <div class="section-images">
-            <img src="img/iluminacion/detalle (1).jpeg" alt="Contacto 1" >
-            <img src="img/iluminacion/detalle (2).jpeg" alt="Contacto 2" >
-            <img src="img/iluminacion/detalle (3).jpeg" alt="Contacto 3" >
-            <img src="img/iluminacion/detalle (4).jpeg" alt="Contacto 4" >
-            <img src="img/iluminacion/detalle (5).jpeg" alt="Contacto 5" >
-        </div>
-        <div class="section-images-responsive">
-            <img src="img/iluminacion/detalle (5).jpeg" alt="Imagen 1">
-        </div>
-        <div id="detalles-contacto" class="details">
-            <p>Realizamos proyectos luminotecnicos, en naves industriales, tableros SMEC.</p>
-        </div>
-    </section>    
-    <section id="bloque4">
-        <h1 class="section-header" >Marcas con las que trbajamos</h1>
-        <div class="image-strip">
-            <div class="image-track">
-                <img src="img/clientes/cliente1.svg" alt="Imagen 1" height="100px">
-                <img src="img/clientes/cliente2.svg" alt="Imagen 2" height="100px">
-                <img src="img/clientes/cliente3.svg" alt="Imagen 3" height="100px">
-                <img src="img/clientes/cliente4.svg" alt="Imagen 4" height="100px">
-                <img src="img/clientes/cliente5.svg" alt="Imagen 5" height="100px">      
-                <img src="img/clientes/cliente1.svg" alt="Imagen 6" height="100px">
-                <img src="img/clientes/cliente2.svg" alt="Imagen 7" height="100px">
-                <img src="img/clientes/cliente3.svg" alt="Imagen 8" height="100px">
-                <img src="img/clientes/cliente4.svg" alt="Imagen 9" height="100px">
-                <img src="img/clientes/cliente5.svg" alt="Imagen 10" height="100px">                                   
+
+        <!-- Secciones de Servicios -->
+        <section id="servicios" class="services-section">
+            <h2 class="section-heading">Nuestros Servicios</h2>
+            
+            <div class="services-grid">
+                <!-- Servicio 1 -->
+                <article class="service-card">
+                    <div class="card-image-wrapper">
+                        <img src="img/montaje/montaje (4).jpeg" alt="Montaje Eléctrico" loading="lazy">
+                    </div>
+                    <div class="card-content">
+                        <h3>Montaje Eléctrico</h3>
+                        <h4>Tableros de Media y Baja Tensión</h4>
+                        <p>Desarrollo de tableros SMEC, montaje electromecánico, automatismos, PLC, y corrección por coseno de Fi.</p>
+                        <a href="montaje-electrico.html" class="btn btn-primary">Ver Proyectos y Galería</a>
+                    </div>
+                </article>
+
+                <!-- Servicio 2 -->
+                <article class="service-card">
+                    <div class="card-image-wrapper">
+                        <img src="img/pat/pat (2).jpeg" alt="Mediciones Eléctricas" loading="lazy">
+                    </div>
+                    <div class="card-content">
+                        <h3>Mediciones Eléctricas</h3>
+                        <h4>Estudios y Certificaciones de Redes</h4>
+                        <p>Realizamos mediciones de Puesta a Tierra (PaT), Disyuntores Res. 900/15, Coseno de Fi, Armónicos y Megados.</p>
+                        <a href="mediciones-electricas.html" class="btn btn-primary">Ver Estudios y Galería</a>
+                    </div>
+                </article>
             </div>
+        </section>
+
+        <!-- Sección Carrusel Inferior -->
+        <section id="clientes" class="clients-section">
+            <h2 class="section-heading">Nuestros Clientes</h2>
+            <div class="image-strip">
+                <div class="image-track">
+                    <img src="img/clientes/cliente1.svg" alt="Cliente 1" height="100px" loading="lazy">
+                    <img src="img/clientes/cliente2.svg" alt="Cliente 2" height="100px" loading="lazy">
+                    <img src="img/clientes/cliente3.svg" alt="Cliente 3" height="100px" loading="lazy">
+                    <img src="img/clientes/cliente4.svg" alt="Cliente 4" height="100px" loading="lazy">
+                    <img src="img/clientes/cliente5.svg" alt="Cliente 5" height="100px" loading="lazy">      
+                    <!-- Duplicados para efecto infinito -->
+                    <img src="img/clientes/cliente1.svg" alt="Cliente 1" height="100px" loading="lazy">
+                    <img src="img/clientes/cliente2.svg" alt="Cliente 2" height="100px" loading="lazy">
+                    <img src="img/clientes/cliente3.svg" alt="Cliente 3" height="100px" loading="lazy">
+                    <img src="img/clientes/cliente4.svg" alt="Cliente 4" height="100px" loading="lazy">
+                    <img src="img/clientes/cliente5.svg" alt="Cliente 5" height="100px" loading="lazy">                                   
+                </div>
+            </div>
+        </section>
+    </main>
+
+    <!-- Botón Whatsapp Flotante -->
+    <a href="https://api.whatsapp.com/send?phone=341255006" class="whatsapp-float" target="_blank" aria-label="Chat en WhatsApp">
+        <svg xmlns="http://www.w3.org/2000/svg" width="35" height="35" fill="currentColor" class="bi bi-whatsapp" viewBox="0 0 16 16">
+            <path d="M13.601 2.326A7.85 7.85 0 0 0 7.994 0C3.627 0 .068 3.558.064 7.926c0 1.399.366 2.76 1.057 3.965L0 16l4.204-1.102a7.9 7.9 0 0 0 3.79.965h.004c4.368 0 7.926-3.558 7.93-7.93A7.9 7.9 0 0 0 13.6 2.326zM7.994 14.53a6.3 6.3 0 0 1-3.2-.87l-.23-.136-2.384.624.63-2.32-.148-.236a6.26 6.26 0 0 1-.958-3.32c-.004-3.46 2.81-6.273 6.275-6.273 1.677.004 3.254.66 4.437 1.844s1.84 2.755 1.84 4.433c-.005 3.46-2.813 6.273-6.278 6.273zm3.43-4.693c-.187-.094-1.108-.547-1.28-.609-.173-.06-.3-.094-.426.094-.125.188-.485.609-.594.73-.11.121-.22.132-.407.038-.187-.094-.79-.291-1.503-.928-.553-.493-.925-1.103-1.035-1.29-.11-.188-.011-.29.083-.383.085-.085.187-.219.281-.328.094-.109.125-.187.187-.312.063-.125.031-.234-.015-.328-.047-.094-.426-1.026-.584-1.405-.152-.37-.306-.32-.426-.326-.112-.005-.24-.006-.367-.006a.71.71 0 0 0-.518.234c-.187.187-.714.698-.714 1.704s.731 1.976.833 2.11c.102.133 1.442 2.2 3.493 3.085.488.21 8.87.359 1.196.46.326.101.815.228 1.134.195.352-.036 1.108-.452 1.265-.89.156-.437.156-.814.11-8.9z"/>
+        </svg>
+    </a>
+
+    <!-- Footer -->
+    <footer class="site-footer">
+        <div class="footer-content">
+            <p>&copy; 2024 TyT Soluciones. Todos los derechos reservados.</p>
+            <p class="developer">Desarrollado por Sebastian Rejón | rejon.sebastian@gmail.com</p>
         </div>
-    </section>
-  </main>
-  <footer class="footer">
-    <p>&copy; 2024 TyT Soluciones. Todos los derechos reservados.</p>
-    <p>Desarrollado por Sebastian Rejón | rejon.sebastian@gmail.com</p>
-</footer>
+    </footer>
+
+    <script src="main.js"></script>
 </body>
-<script src="main.js"></script>
 </html>
